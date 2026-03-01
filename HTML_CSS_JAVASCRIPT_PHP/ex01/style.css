@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+#imgApagada {
+    width: 100px;
+}
+
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: darkslategray;
+    text-align: justify;
+}
