@@ -14,15 +14,35 @@
 
 }
 
+.titSimples{
+
+    width: 50%;
+    background-color: darkgray;
+    color: black;
+    margin: center;
+    padding: 10px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border-radius: 5px;
+    
+
+
+}
+
+
 #tabSimples{
 
 
-    width: 50%;
+    width: 51%;
     background-color: var(--cor0);
-    border-radius: 10px;
+    border-radius: 5px;
     text-align: center;
     font-family: var(--fonte-padrao);
     color: var(--cor1);
+    margin: center;
+    padding: 10px;
+    
 
 
 }
