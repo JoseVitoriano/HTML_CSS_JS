@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+
+    --fonte-padrao: Arial, Verdana, sans-serif;
+    --cor0: blue;
+    --cor1: white;
+
+
+}
+
+#tabSimples{
+
+
+    width: 50%;
+    background-color: var(--cor0);
+    border-radius: 2px;
+    text-align: center;
+    font-family: var(--fonte-padrao);
+    color: var(--cor1);
+
+
+}
