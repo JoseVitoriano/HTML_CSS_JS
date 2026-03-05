@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com JavaScript</title>
+</head>
+<body>
+    <header>
+        <h1><strong>Trabalhando com JavaScript</strong></h1>
+        <p><i>Veremos um exemplo de manipulação de conteúdo através da linguagem de programação JavaScript</i></p>
+    </header>
+
+    <main>
+        <article>
+            <div id="dados">Conteúdo Original</div>
+            <button onclick="alterar()">Clique aqui</button>
+            <script>
+                const alterar = () =>{
+                    let dados = document.getElementById("dados");
+                    dados.innerHTML="Conteúdo alterado";
+                    dados.style.backgroundColor="blue";
+                    dados.style.color="white";
+                    dados.style.textAlign="center";
+                }
+            </script>
+        </article>
+    </main>
+    
+</body>
+</html>
