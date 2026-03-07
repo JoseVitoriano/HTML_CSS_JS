@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições aninhadas</title>
+</head>
+<body>
+    <header>
+        <h1>Estrutura <strong>if else/if</strong></h1>
+    </header>
+
+    <main>
+        <article>
+            <p>Modifica o cumprimento de acordo com a hora do dia.</p>
+            <p id="demo">Que horas são ?</p>
+        </article>
+
+        <script>
+            let painel = document.getElementById("demo");
+            let hora = new Date().getHours();
+
+            if (hora < 12) {
+                painel.innerHTML = "Bom dia, José !";
+                
+            }
+            else if(hora > 12 && hora < 18){
+                painel.innerHTML = "Boa tarde, José !";
+            }
+            else{
+                painel.innerHTML = "Boa noite, José !";
+            }
+        </script>
+    </main>
+    
+</body>
+</html>

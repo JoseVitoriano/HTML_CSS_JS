@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comando Switch</title>
+</head>
+<body>
+    <script>
+        let frase = "", b = eval(prompt("Informe um valor: "));
+
+        switch (b%2) {
+            case 0:
+                frase = "O número é PAR !"                
+                break;
+
+            case 1:
+                frase = "O número é IMPAR !"
+                break;
+
+                   
+            default:
+                frase = "Informe um valor VÁLIDO !"                
+                break;
+        }
+
+        alert(frase);
+    </script>
+    
+</body>
+</html>

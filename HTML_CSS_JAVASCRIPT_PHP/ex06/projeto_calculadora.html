@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada HTML</title>
+    <link rel="shortcut icon" href="imagens/sum_icon_151075.ico" type="image/x-icon">
+    <link rel="stylesheet" href="layout_calculadora.css">
+</head>
+<body>
+
+    <header>
+        <h1>Calculadora</h1>
+    </header>
+
+    <form action="">
+
+        <label for="">Primeiro Número:</label>
+        <input type="number" id="v1">
+        <br>
+        <br>
+
+        <label for="">Segundo Número:</label>
+        <input type="number" id="v2">
+        <br>
+        <br>
+
+        <label for="">Operação</label>
+        <select name="" id="oper">
+
+            <option value="0">Somar</option>
+            <option value="1">Subtração</option>
+            <option value="2">Multiplicação</option>
+            <option value="3">Divisão</option>
+            <option value="4">Potência</option>
+
+        </select>
+        <br>
+        <br>
+
+        <a href="projeto_calculadora.html" onclick="executar()">Executar</a>
+        <br>
+        <br>
+
+    </form>
+
+    <div id="resp">O resultado do calculo é:</div>
+
+    <script src="funcoes.js"></script>
+
+    <script>
+        const executar = () =>{
+            const a = eval(document.getElementById("v1").value);
+            const b = eval(document.getElementById("v2").value);
+            let oper = eval(document.getElementById("oper").selectedIndex);
+            let resultado = (oper == 0)?somar(a,b): (oper == 1)?subtrair(a,b): (oper == 2)?multiplicar(a,b): (oper == 3)?dividir(a,b): exponencial(a,b);
+
+            document.getElementById("resp").innerHTML = ("O resultado do calculo é: ${resultado}");
+
+        }
+
+    </script>
+    
+</body>
+</html>
