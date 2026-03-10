@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura de Fibonacci</title>
+</head>
+<body>
+
+    <header>
+        <h1>Fibonacci</h1>
+    </header>
+
+    <form>
+        <label for="">Valor de X</label>
+        <input type="number" id="v1" />
+        <a href="#" onclick="executar()">Executar</a>
+    </form>
+
+    <div id="resp">O resultado aparece aqui</div>
+
+    <script src="serie_fibonacci.js"></script>
+    <script>
+        const executar = () => {
+            const x = eval(document.getElementById("v1").value);
+            let serie = "", i = 0;
+            while(i <= x){
+                serie += fobonacci(i) +" ";i++;
+                document.getElementById("resp").innerHTML = 'Resultado: ${serie}';
+            }
+        }
+    </script>
+
+
+    
+</body>
+</html>
