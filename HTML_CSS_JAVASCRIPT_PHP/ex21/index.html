@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX na prática</title>
+</head>
+<body>
+
+    <h1>API de Teste httpbiin</h1>
+
+    <form action="">
+
+        <label for="">Nome</label>
+        <input type="text" id="n1"  name="" value="" />
+        <a href="#" onclick="executar()">Executar</a>
+    </form>
+
+    <div id="retorno"></div>
+    <script src="codigo.js"></script>
+
+        <script>
+            const executar = () =>{
+                const nome = document.getElementById("n1").value;
+                ajax(nome, "retorno");
+            }
+        </script>
+    
+</body>
+</html>
