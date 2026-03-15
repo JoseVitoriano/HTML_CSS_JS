@@ -15,3 +15,5 @@ alert (frutas.length);
 frutas.length = 2;
 console.log(frutas.length);
 
+
+

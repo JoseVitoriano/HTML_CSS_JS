@@ -24,9 +24,7 @@
             <option value="exponencial">Potência</option>
         </select>
 
-        <a href="javascript.html" onclick="executar()">Executar</a>
-
-    </form>
+        <a href="#" onclick="executar()">Executar</a>
 
         <div id="resp">O resultado aparece aqui</div>
 
@@ -39,12 +37,16 @@
                 let oper = eval(document.getElementById("oper").selectedIndex);
                 
                 let resultado = (oper == 0)?somar(a,b):(oper == 1)?substrair(a,b):
-                   (oper == 2)?multiplicar(a,b):(oper == 3)?dividir(a,b):exponencial(a,b);
+                (oper == 2)?multiplicar(a,b):(oper == 3)?dividir(a,b):exponencial(a,b);
 
                 document.getElementById("resp").innerHTML = 
-                   'O resultado da operação é: ${resultado}';
+                'O resultado da operação é: ${resultado}';
 
             }
         </script>
+
+
+    </form>
+    
 </body>
 </html>

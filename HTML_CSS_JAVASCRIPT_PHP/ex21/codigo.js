@@ -1,4 +1,5 @@
 
+
 function ajax(nome, camada){
     var url = 'https://httpbin.org/get?text=' + nome;
     var xmlhttp = new XMLHttpRequest();
@@ -11,5 +12,5 @@ function ajax(nome, camada){
 
     xmlhttp.open("GET", url, true);
     xmlhttp.send();
-    
+
 }
