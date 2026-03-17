@@ -10,7 +10,7 @@ while($i <= 20){
 }
 
 
-/* Sintaxe Alternativa*/
+/* Sintaxe Alternativa
 
 $i = 2;
 
@@ -20,3 +20,4 @@ while ($i <= 20):
     echo"\n";
 endwhile;
 
+*/
